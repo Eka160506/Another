@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+body{
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.god{
+    /* background-color: white; */
+    height: 260vh;
+}
+
+.navbar{
+    width: 1079px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart{
+    background-color: rgb(238, 245, 255);
+    width: 180px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+
+.cart a{
+    font-weight: bold;
+    opacity: 80%;
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.head{
+    width: 380px;
+    height: 400px;
+}
+
+.head h1{
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+.head p{
+    margin-top: -20px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 50%;
+    line-height: 25px;
+}
+
+.head-cart{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.head-cart-0{
+    background-color: #F16718;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 10px;
+}
+
+.head-cart-0 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.head-cart-1{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 13px;
+    padding-right: 20px;
+}
+
+.head-cart-1 a{
+    opacity: 50%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.kboard img{
+    height: 470px;
+    width: 570px;
+    border-radius: 15px;
+}
+
+.design{
+    position: absolute;
+    display: flex;
+    left: 200vh;
+}
+
+.container-tech{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.tech{
+    position: absolute;
+    display: flex;
+    right: 200vh;
+    /* top: 200vh; */
+}
+
+.image{
+    display: flex;
+}
+
+.one {
+    height: 480px;
+    width: 255px;
+    border-radius: 20px;
+}
+
+.two{
+    height: 443,5px;
+    width: 410px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.desk{
+    margin-left: 10px;
+    padding-top: 8vh;
+    padding-left: 14vh;
+    padding-right: 10vh;
+}
+ .desk h3{
+    font-size: 35px;
+    line-height: 7vh;
+    opacity: 80%;
+}
+
+.desk p{
+    font-size: 15px;
+    line-height: 4vh;
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.future{
+    display: flex;
+    margin-top: 15vh;
+}
+
+.television, .wireless, .battery, .lamp{
+    padding-right: 50px;
+}
+
+.television svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.wireless svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.battery svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lamp svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+.future h3{
+    font-size: 20px;
+    width: 150px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+.future p{
+    font-size: 13px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 3vh;
+    opacity: 50%;
+}
+
+.copyright{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+}
+
+span{
+    font-family: 'Barlow', sans-serif;
+    opacity: 100%;
+    font-weight: bold;
+}
