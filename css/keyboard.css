@@ -1,217 +1,265 @@
-  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-
-/* css reset */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
 body{
-    width: 100%;
-    min-height: 400px;
-    background-color: #FFFFFF;
     font-family: sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.god{
+    /* background-color: black; */
+    height: auto;
+    min-height: 260vh;
+    flex-wrap: wrap;
 }
 
 .navbar{
-    width: 80%;
+    align-items: center;
+    width: 1079px;
+    height: 40px;
     display: flex;
-    justify-content:space-between;
-    margin-left: 10%;
-    margin-top: 40px;
+    justify-content: space-between;
 }
 
 .cart{
-    width: 170px;
-}
-
-.cart p{
+    background-color: rgb(238, 245, 255);
+    width: 180px;
     height: 30px;
     justify-content: center;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 80px;
+    border-radius: 10px;
     padding-top: 15px;
-    background-color: #E8EFF2;
-    border-radius: 6px;
+}
+
+.cart a{
     font-weight: bold;
+    opacity: 80%;
+    text-decoration: none;
+    color: black;
 }
 
 .container{
-    width: 80%;
     display: flex;
-    justify-content:space-between;
-    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .head{
-    padding-top: 50px;
+    width: 380px;
+    height: 400px;
 }
 
 .head h1{
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: 1000;
     opacity: 80%;
-    font-family: 'Barlow', sans-serif;
-    font-size: 55px;
-    font-weight: 900;
-    padding-right: 100px;
 }
 
 .head p{
-    opacity: 40%;
-    font-family: sans-serif;
-    padding-top: 30px;
-    font-size: 16px;
-    line-height: 26px;
+    margin-top: -20px;
+    font-size: 14px;
     font-weight: bold;
-
-}
-
-.kboard img{
-    border-radius: 10%;
-    width: 520px;
-    height: 450px;
-    margin-left: 120px;
-}
-
-.design{
-    opacity: 0%;
-    position: absolute;
-    right: 0;
-    margin-left: 100px;
+    opacity: 50%;
+    line-height: 25px;
 }
 
 .head-cart{
+    /* background-color: antiquewhite; */
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
 .head-cart-0{
-    margin-left: 20px;
     background-color: #F16718;
-    height: 33px;
+    height: 30px;
     width: 150px;
-    padding-top: 17px;
     text-align: center;
+    padding-top: 13px;
     border-radius: 10px;
 }
 
 .head-cart-0 a{
+    text-decoration: none;
     color: white;
-    text-decoration: none;
-    font-family: 'Barlow', sans-serif;
-}
-
-.head-cart-1{
-    margin-left: 30px;
-    text-align: center;
-    height: 33px;
-    width: 150px;
-    padding-top: 17px;
-}
-
-.head-cart-1 a{
-    opacity: 60%;
-    color: black;
-    text-decoration: none;
-    font-family: 'Barlow', sans-serif;
     font-weight: bold;
 }
 
+.head-cart-1{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 13px;
+    padding-right: 20px;
+}
+
+.head-cart-1 a{
+    opacity: 50%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.kboard img{
+    height: 470px;
+    width: 570px;
+    border-radius: 15px;
+}
+
+.design svg{
+    height: 100%;
+}
+.design{
+    width: 110px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 23vh;
+}
+
 .container-tech{
-    width: 80%;
-    height: 500px;
-    margin-left: 10%;
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .tech{
     position: absolute;
-    left: -150px;
-    top: 922px;
-    opacity: 70%;
+    display: flex;
+    right: 200vh;
+    /* top: 200vh; */
 }
 
 .image{
     display: flex;
-    justify-content: space-between;
 }
 
-.one{
-    height: 100%;
-    width: 70%;
+.back{
+    height: 480px;
+    width: 255px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #ff7220e0;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.one {
+    height: 480px;
+    width: 255px;
     border-radius: 20px;
 }
 
 .two{
-    height: 100%;
-    width: 80%;
-    margin-left: 30px;
+    height: 443,5px;
+    width: 410px;
+    margin-left: 20px;
     border-radius: 20px;
 }
 
 .desk{
-    position: absolute;
-    margin-right: 100px;
-    right: 100px;
-    width: 230px;
-    height: 300px;
-    padding-top: 100px;
+    margin-left: 10px;
+    padding-top: 8vh;
+    padding-left: 14vh;
+    padding-right: 10vh;
 }
-
-.desk h3{
-    font-size: 45px;
-    font-family: 'Barlow', sans-serif;
+ .desk h3{
+    font-size: 35px;
+    line-height: 7vh;
+    opacity: 80%;
 }
 
 .desk p{
-    opacity: 40%;
-    margin-top: 20px;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 4vh;
     font-weight: bold;
-    line-height: 20px;
+    opacity: 50%;
+}
+
+.future{
+    display: flex;
+    margin-top: 15vh;
+}
+
+.television, .wireless, .battery, .lamp{
+    padding-right: 50px;
+}
+
+.television svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.wireless svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.battery svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lamp svg{
+    background-color: #F16718;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+.future h3{
+    font-size: 20px;
+    width: 150px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+.future p{
+    font-size: 13px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 3vh;
+    opacity: 50%;
+}
+
+.copyright{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+}
+
+span{
+    font-family: 'Barlow', sans-serif;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: azure;
+        display: inline;
+    }
 }
