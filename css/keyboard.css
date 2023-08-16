@@ -257,9 +257,7 @@ span{
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px){
-    body{
-        background-color: azure;
-        display: inline;
-    }
-}
+@media (max-width: 600px){}
+@media (max-width: 900px){}
+@media (max-width: 1200px){}
+@media (max-width: 1500px){}
