@@ -1,111 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Barlow', sans-serif; */
 
-body{
+:root{
+    --primary: #F16718;
+    --font: #010101;
+    --background: #fff8f2;
+    --second: #E8EFF2;
+}
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+p, a, h1, h3{
+    color: var(--font);
+}
+
+span{
+    color: var(--primary);
+    font-weight: 600;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--background);
+    color: var(--font);
 }
 
 .god{
-    width: 86%;
-    height: auto;
-    min-height: 270vh;
-    background-color: cornflowerblue;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 7vh;
-    flex-wrap: wrap;
+    margin: 2rem 5rem 0rem 5rem;
+    background-color: var(--background);
 }
 
 .navbar{
-    background-color: antiquewhite;
-    height: 6.5vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.cart{
-    width: 25vh;
-    height: auto;
-    justify-content: center;
+.navbar .corp img{
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.navbar .cart{
+    background-color: var(--second);
+    height: 4rem;
+    width: 13rem;
     text-align: center;
-    background-color: #F16718;
-    padding-top: 2vh;
-    border-radius: 1vh;
+    padding-top: 1rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-.cart a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
+.navbar .cart:hover{
+    background-color: #b5babd;
 }
 
-.container{
-    height: 70vh;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+    .navbar .cart{
+        height: 3rem;
+        width: 11rem;
+        font-size: 1rem;
+        padding-top: 0.9rem;
+    }
+    .navbar .corp img{
+        width: 80%;
+        height: 80%;
+    }
 }
 
-.head{
-    width: 60vh;
-    padding-top: 10vh;
+/* Tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    .navbar .cart{
+        height: 3rem;
+        width: 11rem;
+        font-size: 1rem;
+        padding-top: 0.9rem;
+    }
+    .navbar .corp img{
+        width: 70%;
+        height: 70%;
+    }
 }
 
-.head h1{
-    font-size: 50px;
-    line-height: 8vh;
-    font-family: 'Barlow', sans-serif;
-}
-
-.head p{
-    margin-top: -1vh;
-    font-size: 13px;
-    line-height: 3.5vh;
-    opacity: 60%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.head-cart{
-    margin-top: 5vh;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.head-cart-0 {
-    width: 26vh;
-    padding-top: 2vh;
-    height: 5vh;
-    border-radius: 1.2vh;
-    background-color: #F16718;
-}
-
-.head-cart-0 a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: 'Barlow', sans-serif;
-}
-
-.head-cart-1 {
-    width: 26vh;
-    padding-top: 2vh;
-    height: 5vh;
-    border-radius: 1.2vh;
-}
-
-.head-cart-1 a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.550);
-    font-family: 'Barlow', sans-serif;
-}
-
-.kboard img{
-    height: 70vh;
-    width: 85vh;
-    border-radius: 3vh;
-}
-
-.design{
-    position: absolute;
-    right: 0;
+/* Mobile Phone */
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+    .navbar .cart{
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1rem;
+        padding-top: 0.7rem;
+    }
+    .navbar .corp img{
+        width: 60%;
+        height: 60%;
+    }
 }
