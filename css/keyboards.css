@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Barlow', sans-serif; */
 
 :root{
     --primary: #F16718;
     --font: #010101;
     --background: #fff8f2;
     --second: #E8EFF2;
+    --barlow: 'Barlow', sans-serif;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -16,25 +15,24 @@
     border: none;
     text-decoration: none;
 }
-
 p, a, h1, h3{
     color: var(--font);
 }
-
 span{
     color: var(--primary);
     font-weight: 600;
 }
 
+/* body */
 body{
-    font-family: 'Barlow', sans-serif;
+    font-family: var(--barlow);
     background-color: var(--background);
     color: var(--font);
 }
 
 .god{
-    margin: 2rem 5rem 0rem 5rem;
-    background-color: var(--background);
+    margin: 2rem 10rem 0rem 10rem;
+    /* background-color: var(--primary); */
 }
 
 .navbar{
@@ -71,14 +69,14 @@ body{
         font-size: 75%;
     }
     .navbar .cart{
-        height: 3rem;
-        width: 11rem;
-        font-size: 1rem;
-        padding-top: 0.9rem;
+        height: 4rem;
+        width: 13rem;
+        font-size: 1.3rem;
+        padding-top: 1rem;
     }
     .navbar .corp img{
-        width: 80%;
-        height: 80%;
+        width: 4rem;
+        height: 4rem;
     }
 }
 
@@ -88,14 +86,14 @@ body{
         font-size: 62.5%;
     }
     .navbar .cart{
-        height: 3rem;
+        height: 3.5rem;
         width: 11rem;
         font-size: 1rem;
-        padding-top: 0.9rem;
+        padding-top: 1.1rem;
     }
     .navbar .corp img{
-        width: 70%;
-        height: 70%;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
 
@@ -105,13 +103,321 @@ body{
         font-size: 55%;
     }
     .navbar .cart{
-        height: 2.5rem;
+        height: 3rem;
         width: 10rem;
-        font-size: 1rem;
-        padding-top: 0.7rem;
+        font-size: 0.8rem;
+        padding-top: 1rem;
     }
     .navbar .corp img{
-        width: 60%;
-        height: 60%;
+        width: 3rem;
+        height: 3rem;
     }
+}
+
+/* Master Start */
+.master{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.master .judul{
+    max-width: 60rem;
+    padding-top: 4rem;
+    max-height: 45rem;
+}
+
+.master .judul h1{
+    font-size: 6em;
+    font-weight: 800;
+    line-height: 7rem;
+}
+
+.master .judul p{
+    max-width: 32rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 70%;
+}
+
+.master .judul .cartesius{
+    display: flex;
+    padding: 3rem 8rem 3rem 0rem;
+    font-size: 1.2rem;
+}
+.master .judul .cartesius .cart-bg{
+    width: 14rem;
+    height: 4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+    background-color: var(--primary);
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.master .judul .cartesius .cart-none-bg{
+    width: 14rem;
+    height: 4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+    font-weight: 600;
+    opacity: 60%;
+}
+.master .judul-image img{
+    height: 38rem;
+    width: 40rem;
+    border-radius: 1.5rem;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px){
+    .master .judul-image img{
+        height: 40rem;
+        width: 47rem;
+        border-radius: 1.5rem;
+    }
+    .master .judul .cartesius{
+        display: flex;
+        padding: 3rem 8rem 3rem 0rem;
+        font-size: 1.2rem;
+    }
+    .master .judul .cartesius .cart-bg{
+        width: 14rem;
+        height: 4rem;
+        text-align: center;
+        padding-top: 1.2rem;
+        background-color: var(--primary);
+        font-weight: 600;
+        border-radius: 0.5rem;
+    }
+    .master .judul .cartesius .cart-none-bg{
+        width: 14rem;
+        height: 4rem;
+        text-align: center;
+        padding-top: 1.2rem;
+        font-weight: 600;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    .master{
+        display: block;
+    }
+    .master .judul .cartesius{
+        display: flex;
+        padding: 3rem 8rem 3rem 0rem;
+    }
+    .master .judul .cartesius .cart-bg{
+        width: 14rem;
+        height: 4rem;
+        text-align: center;
+        padding-top: 1.2rem;
+        background-color: var(--primary);
+        font-weight: 600;
+        border-radius: 0.5rem;
+    }
+    .master .judul .cartesius .cart-none-bg{
+        width: 14rem;
+        height: 4rem;
+        text-align: center;
+        padding-top: 1.2rem;
+        font-weight: 600;
+    }
+    .master .judul-image img{
+        height: 38rem;
+        width: 45.5rem;
+        border-radius: 1.5rem;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px){
+    .master{
+        display: block;
+    }
+    .master .judul .cartesius{
+        display: flex;
+        padding: 3rem 8rem 3rem 0rem;
+    }
+    .master .judul .cartesius .cart-bg{
+        width: 14rem;
+        height: 4rem;
+        text-align: center;
+        padding-top: 1.2rem;
+        background-color: var(--primary);
+        font-weight: 600;
+        border-radius: 0.5rem;
+    }
+    .master .judul .cartesius .cart-none-bg{
+        width: 14rem;
+        height: 4rem;
+        text-align: center;
+        padding-top: 1.2rem;
+        font-weight: 600;
+    }
+    .master .judul-image img{
+        max-height: 30rem;
+        max-width: 33.5rem;
+        border-radius: 1.5rem;
+    }
+}
+
+/* Decoration */
+
+.decoration-right img{
+    max-height: 30rem;
+}
+.decoration-right{
+    width: 7rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 12rem;
+}
+
+/* Media Query */
+
+/* Media Latop */
+@media (max-width: 1366px){
+    .decoration-right img{
+        max-height: 30rem;
+        height: 20rem;
+    }
+    .decoration-right{
+        width: 7rem;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 12.2rem;
+    }
+}
+
+/* Media Tablet */
+@media (max-width: 768px){
+    .decoration-right img{
+        max-height: 100%;
+    }
+    .decoration-right{
+        width: 7rem;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 46rem;
+    }
+}
+
+/* Media Mobile  */
+@media (max-width: 450px){
+    .decoration-right img{
+        max-height: 100%;
+        height: 16rem;
+    }
+    .decoration-right{
+        width: 7rem;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 46rem;
+    }
+}
+
+/* appearance */
+.appearance{
+    display: flex;
+    margin-top: 5rem;
+}
+.appearance .decoration-left img{
+    height: 18rem;
+}
+.appearance .decoration-left{
+    overflow: hidden;
+    position: absolute;
+    left: -12rem;
+    top: 100rem;
+}
+.appearance .pov-image .bg-filter{
+    height: 33rem;
+    width: 18rem;
+    background-color: var(--primary);
+    position: absolute;
+    opacity: 85%;
+    border-radius: 1rem;
+}
+.appearance .pov-image .one{
+    height: 33rem;
+    width: 18rem;
+    border-radius: 1rem;
+}
+.appearance .pov-image .two{
+    height: 33rem;
+    width: 31rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+.appearance .desk{
+    width: 25.2rem;
+    padding: 6rem 6rem 0rem 6rem;
+}
+.appearance .desk h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.appearance .desk p{
+    font-weight: 600;
+    margin-top: 2rem;
+    opacity: 80%;
+    line-height: 1.5rem;
+}
+
+/* Media Query */
+
+/* Media Laptop */
+@media (max-width: 1366px){
+    .appearance .decoration-left{
+        overflow: hidden;
+        position: absolute;
+        left: -12rem;
+        top: 72.4rem;
+    }
+    .appearance .decoration-left img{
+        height: 18rem;
+    }
+    .appearance .pov-image{
+        margin-top: -2rem;
+    }
+    .appearance .pov-image .bg-filter{
+        position: absolute;
+        height: 44rem;
+        width: 24rem;
+    }
+    .appearance .pov-image .one{
+        height: 44rem;
+        width: 24rem;
+    }
+    .appearance .pov-image .two{
+        height: 44rem;
+        width: 43rem;
+    }
+    .appearance .desk{
+
+    }
+    .appearance .desk h3{
+
+    }
+    .appearance .desk p{
+
+    }
+}
+
+/* Media Table */
+@media (max-width: 768px){
+    
+}
+
+/* Media Mobile */
+@media (max-width: 450px){
+    
 }
