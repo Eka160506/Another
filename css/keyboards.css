@@ -208,7 +208,7 @@ body{
     }
     .master .judul .cartesius{
         display: flex;
-        padding: 3rem 8rem 3rem 0rem;
+        padding: 3rem 8rem 5rem 0rem;
     }
     .master .judul .cartesius .cart-bg{
         width: 14rem;
@@ -305,7 +305,7 @@ body{
         overflow: hidden;
         position: absolute;
         right: 0;
-        top: 46rem;
+        top: 48rem;
     }
 }
 
@@ -327,7 +327,7 @@ body{
 /* appearance */
 .appearance{
     display: flex;
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 .appearance .decoration-left img{
     height: 18rem;
@@ -358,7 +358,7 @@ body{
     border-radius: 1rem;
 }
 .appearance .desk{
-    width: 25.2rem;
+    max-width: 25.2rem;
     padding: 6rem 6rem 0rem 6rem;
 }
 .appearance .desk h3{
@@ -376,17 +376,21 @@ body{
 
 /* Media Laptop */
 @media (max-width: 1366px){
+    .appearance{
+        display: flex;
+        justify-content: space-between;
+    }
     .appearance .decoration-left{
         overflow: hidden;
         position: absolute;
         left: -12rem;
-        top: 72.4rem;
+        top: 83.4rem;
     }
     .appearance .decoration-left img{
         height: 18rem;
     }
     .appearance .pov-image{
-        margin-top: -2rem;
+        padding-top: -2rem;
     }
     .appearance .pov-image .bg-filter{
         position: absolute;
@@ -399,25 +403,156 @@ body{
     }
     .appearance .pov-image .two{
         height: 44rem;
-        width: 43rem;
+        width: 46rem;
     }
     .appearance .desk{
-
+        max-width: 36.45rem;
+        padding: 10rem 0rem 0rem 15rem;
     }
     .appearance .desk h3{
-
+        font-size: 3.5rem;
     }
     .appearance .desk p{
-
+        font-size: 1.5rem;
+        max-width: 24rem;
+        line-height: 1.5rem;
+        opacity: 70%;
     }
 }
 
 /* Media Table */
 @media (max-width: 768px){
-    
+    .appearance{
+        display: block;
+    }
+    .appearance .decoration-left{
+        margin-top: 34rem;
+    }
+    .appearance .pov-image .bg-filter{
+        position: absolute;
+        height: 40rem;
+        width: 20rem;
+    }
+    .appearance .pov-image .one{
+        height: 40rem;
+        width: 20rem;
+    }
+    .appearance .pov-image .two{
+        height: 40rem;
+        width: 39rem;
+    }
+    .appearance .desk{
+        justify-content: center;
+        padding: 3rem 10rem 3rem 6rem;
+        max-width: max-content;
+    }
+    .appearance .desk h3{
+        font-size: 5rem;
+    }
+    .appearance .desk p{
+        font-size: 1.5rem;
+        max-width: 39rem;
+        line-height: 1.5rem;
+    }
 }
 
 /* Media Mobile */
 @media (max-width: 450px){
+    .appearance{
+        display: block;
+    }
+    .appearance .decoration-left{
+        margin-top: 34rem;
+    }
+    .appearance .pov-image .bg-filter{
+        position: absolute;
+        height: 40rem;
+        width: 20rem;
+    }
+    .appearance .pov-image .one{
+        height: 40rem;
+        width: 20rem;
+    }
+    .appearance .pov-image .two{
+        margin: 0;
+        height: 36rem;
+        width: 35rem;
+    }
+    .appearance .desk{
+        justify-content: center;
+        padding: 3rem 10rem 3rem 4rem;
+        max-width: max-content;
+    }
+    .appearance .desk h3{
+        font-size: 4.5rem;
+    }
+    .appearance .desk p{
+        font-size: 1.5rem;
+        max-width: 39rem;
+        line-height: 1.8rem;
+    }
+}
+
+/* kelebihan */
+.kelebihan{
+    background-color: #F16718;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.kelebihan .kelebihan-satu{
+    max-width: 16rem;
+    min-height: 18rem;
+    background-color: #b5babd;
+}
+.kelebihan .kelebihan-satu img{
+
+}
+.kelebihan .kelebihan-satu h3{
+
+}
+.kelebihan .kelebihan-satu p{
+
+}
+.kelebihan-dua{
+    max-width: 16rem;
+    min-height: 18rem;
+    background-color: #b5babd;
+}
+.kelebihan .kelebihan-satu img{
+
+}
+.kelebihan .kelebihan-satu h3{
+
+}
+.kelebihan .kelebihan-satu p{
+    
+}
+.kelebihan-tiga{
+    max-width: 16rem;
+    min-height: 18rem;
+    background-color: #b5babd;
+}
+.kelebihan .kelebihan-satu img{
+
+}
+.kelebihan .kelebihan-satu h3{
+
+}
+.kelebihan .kelebihan-satu p{
+    
+}
+.kelebihan-empat{
+    max-width: 16rem;
+    min-height: 18rem;
+    background-color: #b5babd;
+}
+.kelebihan .kelebihan-satu img{
+
+}
+.kelebihan .kelebihan-satu h3{
+
+}
+.kelebihan .kelebihan-satu p{
     
 }
