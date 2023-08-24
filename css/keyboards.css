@@ -14,11 +14,12 @@
     outline: none;
     border: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 p, a, h1, h3{
     color: var(--font);
 }
-span{
+span a{
     color: var(--primary);
     font-weight: 600;
 }
@@ -55,12 +56,11 @@ body{
     border-radius: 0.3rem;
     font-weight: 600;
     font-size: 1.2rem;
+    transition: 0.2s;
 }
-
-.navbar .cart:hover{
-    background-color: #b5babd;
+.navbar .cart a:hover{
+    color: var(--primary);
 }
-
 /* Media Queries */
 
 /* Laptop */
@@ -374,6 +374,13 @@ body{
 
 /* Media Query */
 
+/* Media Monitor */
+@media (min-width:1366px){
+    .appearance .decoration-left{
+        top: 70.2rem;
+    }
+}
+
 /* Media Laptop */
 @media (max-width: 1366px){
     .appearance{
@@ -426,7 +433,7 @@ body{
         display: block;
     }
     .appearance .decoration-left{
-        margin-top: 34rem;
+        margin-top: 30rem;
     }
     .appearance .pov-image .bg-filter{
         position: absolute;
@@ -443,7 +450,7 @@ body{
     }
     .appearance .desk{
         justify-content: center;
-        padding: 3rem 10rem 3rem 6rem;
+        padding: 3rem 10rem 3rem 0rem;
         max-width: max-content;
     }
     .appearance .desk h3{
@@ -462,7 +469,7 @@ body{
         display: block;
     }
     .appearance .decoration-left{
-        margin-top: 34rem;
+        margin-top: 19.8rem;
     }
     .appearance .pov-image .bg-filter{
         position: absolute;
@@ -480,7 +487,7 @@ body{
     }
     .appearance .desk{
         justify-content: center;
-        padding: 3rem 10rem 3rem 4rem;
+        padding: 3rem 10rem 3rem 0rem;
         max-width: max-content;
     }
     .appearance .desk h3{
@@ -495,64 +502,427 @@ body{
 
 /* kelebihan */
 .kelebihan{
-    background-color: #F16718;
+    margin-top: 10rem;
     display: flex;
-    max-width: 100%;
     justify-content: space-between;
 }
 .kelebihan .kelebihan-satu{
-    max-width: 16rem;
-    min-height: 18rem;
-    background-color: #b5babd;
+    max-width: 22rem;
+    min-height: 19rem;
 }
-.kelebihan .kelebihan-satu img{
-
-}
-.kelebihan .kelebihan-satu h3{
-
-}
-.kelebihan .kelebihan-satu p{
-
-}
-.kelebihan-dua{
-    max-width: 16rem;
-    min-height: 18rem;
-    background-color: #b5babd;
-}
-.kelebihan .kelebihan-satu img{
-
+.kelebihan .kelebihan-satu img {
+    background-color: var(--primary);
+    height: 5rem;
+    width: 5rem;   
+    padding: 0.6rem;
+    border-radius: 0.5rem;
 }
 .kelebihan .kelebihan-satu h3{
-
-}
-.kelebihan .kelebihan-satu p{
-    
-}
-.kelebihan-tiga{
+    min-width: 12rem;
+    padding-top: 2rem;
+    font-size: 2rem;
     max-width: 16rem;
-    min-height: 18rem;
-    background-color: #b5babd;
-}
-.kelebihan .kelebihan-satu img{
-
-}
-.kelebihan .kelebihan-satu h3{
-
 }
 .kelebihan .kelebihan-satu p{
-    
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 70%;
 }
-.kelebihan-empat{
+.kelebihan .kelebihan-dua{
+    max-width: 22rem;
+    min-height: 19rem;
+}
+.kelebihan .kelebihan-dua img{
+    background-color: var(--primary);
+    height: 5rem;
+    width: 5rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+.kelebihan .kelebihan-dua h3{
+    min-width: 12rem;
+    padding-top: 2rem;
+    font-size: 2rem;
     max-width: 16rem;
-    min-height: 18rem;
-    background-color: #b5babd;
 }
-.kelebihan .kelebihan-satu img{
+.kelebihan .kelebihan-dua p{
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 70%;
+}
+.kelebihan .kelebihan-tiga{
+    max-width: 22rem;
+    min-height: 19rem;
+}
+.kelebihan .kelebihan-tiga img{
+    background-color: var(--primary);
+    height: 5rem;
+    width: 5rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+.kelebihan .kelebihan-tiga h3{
+    min-width: 12rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    max-width: 16rem;
+}
+.kelebihan .kelebihan-tiga p{
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 70%;
+}
+.kelebihan .kelebihan-empat{
+    max-width: 22rem;
+    min-height: 19rem;
+}
+.kelebihan .kelebihan-empat img{
+    background-color: var(--primary);
+    height: 5rem;
+    width: 5rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+.kelebihan .kelebihan-empat h3{
+    min-width: 12rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    max-width: 16rem;
+}
+.kelebihan .kelebihan-empat p{
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 70%;
+}
 
-}
-.kelebihan .kelebihan-satu h3{
+/* Media Query */
 
+/* Media Laptop */
+@media (max-width: 1366px){
+    .kelebihan{
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .kelebihan .kelebihan-satu{
+        max-width: 22rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-satu img {
+        background-color: var(--primary);
+        height: 4rem;
+        width: 4rem;   
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-satu h3{
+        min-width: 12rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        max-width: 16rem;
+    }
+    .kelebihan .kelebihan-satu p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-dua{
+        max-width: 22rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-dua img{
+        background-color: var(--primary);
+        height: 4rem;
+        width: 4rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-dua h3{
+        min-width: 12rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        max-width: 16rem;
+    }
+    .kelebihan .kelebihan-dua p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-tiga{
+        max-width: 22rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-tiga img{
+        background-color: var(--primary);
+        height: 4rem;
+        width: 4rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-tiga h3{
+        min-width: 12rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        max-width: 16rem;
+    }
+    .kelebihan .kelebihan-tiga p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-empat{
+        max-width: 22rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-empat img{
+        background-color: var(--primary);
+        height: 4rem;
+        width: 4rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-empat h3{
+        min-width: 12rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        max-width: 16rem;
+    }
+    .kelebihan .kelebihan-empat p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
 }
-.kelebihan .kelebihan-satu p{
-    
+
+/* Media Tablet */
+@media (max-width: 768px){
+    .kelebihan{
+        margin: 10rem 20rem;
+        display: block;
+    }
+    .kelebihan .kelebihan-satu{
+        text-align: center;
+        max-width: 30rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-satu img {
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;   
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-satu h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-satu p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-dua{
+        text-align: center;
+        max-width: 30rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-dua img{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-dua h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-dua p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-tiga{
+        text-align: center;
+        max-width: 30rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-tiga img{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-tiga h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-tiga p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-empat{
+        text-align: center;
+        max-width: 30rem;
+        min-height: 19rem;
+    }
+    .kelebihan .kelebihan-empat img{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-empat h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-empat p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+}
+
+/* Media Phone */
+@media (max-width: 450px){
+    .kelebihan{
+        margin: auto;
+        display: block;
+    }
+    .kelebihan .kelebihan-satu{
+        max-width: none;
+        min-height: 10rem;
+        padding: 0rem 4rem;
+    }
+    .kelebihan .kelebihan-satu img {
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;   
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-satu h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-satu p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-dua{
+        max-width: none;
+        min-height: 10rem;
+        padding: 0rem 4rem;
+    }
+    .kelebihan .kelebihan-dua img{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-dua h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-dua p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-tiga{
+        max-width: none;
+        min-height: 10rem;
+        padding: 0rem 4rem;
+    }
+    .kelebihan .kelebihan-tiga img{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-tiga h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-tiga p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .kelebihan .kelebihan-empat{
+        max-width: none;
+        min-height: 10rem;
+        padding: 0rem 4rem;
+    }
+    .kelebihan .kelebihan-empat img{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 5rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+    }
+    .kelebihan .kelebihan-empat h3{
+        min-width: 12rem;
+        max-width: none;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .kelebihan .kelebihan-empat p{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: 70%;
+    }
+}
+
+/* copyright */
+.copyright{
+    text-align: center;
+    margin: 6rem 0rem 2rem 0rem;
+    cursor: pointer;
+}
+.copyright p{
+    font-size: 1.4rem;
+}
+.copyright span a{
+    transition: 1s;
+}
+.copyright span a:hover{
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary), 0 0 80px var(--primary), 0 0 120px var(--primary), 0 0 160px var(--primary);
 }
