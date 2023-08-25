@@ -926,3 +926,19 @@ body{
     color: var(--primary);
     text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary), 0 0 80px var(--primary), 0 0 120px var(--primary), 0 0 160px var(--primary);
 }
+
+/* Media Query */
+
+/* Media Monitor pc */
+@media (min-width: 1366px){
+    .copyright p, a{
+        font-size: 1.8rem;
+    }
+}
+
+/* Media Mobile */
+@media (max-width: 450px){
+    .copyright p, a{
+        font-size: 1rem;
+    }
+}
